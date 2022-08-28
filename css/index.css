@@ -4,26 +4,57 @@
   box-sizing: border-box;
 }
 
-header {
+.header {
   padding: 20px;
   font-size: 4rem;
   text-align: center;
+  background: rgb(246, 168, 43);
+  color: rgb(239, 239, 247);
 }
 
 section {
   width: 80%;
   margin: 0 auto;
-  border: 3px solid green;
+  /* border: 3px solid green; */
 }
 
-div img {
+.image-div img {
+  width: 80%;
+  /* margin: 2px; */
+}
+
+.image-div {
   width: 30%;
-  margin: 2px;
 }
 
-div {
+.sub-section {
   width: 100%;
-  border: 3px solid blue;
+  /* border: 3px solid grey; */
+  background: rgb(226, 223, 223);
+  margin: 40px 0;
   display: flex;
+  padding: 35px 20px;
+  border-radius: 5px;
+}
+
+.sub-section:hover {
+  background-color: rgb(198, 195, 195);
+}
+
+#area {
+  width: 80%;
+  height: 170px;
+  /* border: 3px solid red; */
+}
+
+.dimension {
+  width: 70%;
+  font-size: 50px;
   padding: 20px;
+  
+  /* border: 2px solid red; */
+}
+
+.dimension:visited {
+  color: none;
 }
