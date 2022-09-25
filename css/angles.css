@@ -5,7 +5,6 @@ section {
 label {
   display: block;
   padding: 20px;
-  font-size: 30px;
 }
 
 input {
@@ -13,20 +12,47 @@ input {
   padding: 10px;
 }
 
+.header {
+  background-color: purple;
+  color: white;
+  margin-bottom: 20px;
+}
+
 .header,
 .output {
   text-align: center;
-  font-size: 60px;
   padding: 20px;
   /* border: 2px solid red; */
 }
 
 button {
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 
-.output {
-  font-size: 40px;
+@media only screen and (max-width: 500px) {
+  .header,
+  .output {
+    font-size: 35px;
+  }
+  label {
+    font-size: 20xpx;
+  }
+  .output {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .header,
+  .output {
+    font-size: 60px;
+  }
+  label {
+    font-size: 30px;
+  }
+  .output {
+    font-size: 40px;
+  }
 }

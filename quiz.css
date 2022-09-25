@@ -1,0 +1,51 @@
+.header {
+  background-color: purple;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.questions {
+  padding: 10px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.questions p {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.questions label {
+  padding: 5px 10px 5px 0;
+}
+
+#quiz-btn {
+  font-size: 1rem;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.questions input {
+  cursor: pointer;
+}
+
+#output p {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .header {
+    font-size: 60px;
+  }
+}

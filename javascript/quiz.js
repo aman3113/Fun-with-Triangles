@@ -15,11 +15,6 @@ const ansArray = [
   "Hypotenuse",
 ];
 
-// console.log(inputs);
-// console.log(input);
-
-quizBtn.addEventListener("click", calculateScore);
-
 function calculateAnsCount() {
   var ansCount = 0;
   for (let i = 0; i < inputs.length; i++) {
@@ -29,6 +24,9 @@ function calculateAnsCount() {
   }
   return ansCount;
 }
+
+quizBtn.addEventListener("click", calculateScore);
+
 function calculation() {
   var score = 0;
   var index = 0;
@@ -40,22 +38,22 @@ function calculation() {
       index++;
     }
   }
-  console.log(score);
-  output.innerText = score;
+  // output.innerText = score;
 
-  //   output.innerHTML =
-  //     "<p> Your total score: " +
-  //     score +
-  //     "<br> No of Correct Answers: " +
-  //     score +
-  //     "<br>No of Incorrect Answers: " +
-  //     (10 - score) +
-  //     "</p>";
+  output.innerHTML =
+    "<p> Your total score: " +
+    score +
+    "<br> No of Correct Answers: " +
+    score +
+    "<br>No of Incorrect Answers: " +
+    (10 - score) +
+    "</p>";
 }
 
 function calculateScore() {
   var ansCount = calculateAnsCount();
-  if (ansCount) {
+  console.log(ansCount);
+  if (ansCount === ansArray.length) {
     calculation();
   } else {
     alert("please ans all the questions");

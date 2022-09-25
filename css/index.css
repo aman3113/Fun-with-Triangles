@@ -6,7 +6,6 @@
 
 .header {
   padding: 20px;
-  font-size: 4rem;
   text-align: center;
   background: rgb(246, 168, 43);
   color: rgb(239, 239, 247);
@@ -16,11 +15,6 @@ section {
   width: 80%;
   margin: 0 auto;
   /* border: 3px solid green; */
-}
-
-.image-div img {
-  width: 80%;
-  /* margin: 2px; */
 }
 
 .image-div {
@@ -41,20 +35,59 @@ section {
   background-color: rgb(198, 195, 195);
 }
 
-#area {
-  width: 80%;
-  height: 170px;
-  /* border: 3px solid red; */
-}
-
 .dimension {
   width: 70%;
-  font-size: 50px;
   padding: 20px;
-  
-  /* border: 2px solid red; */
 }
 
 .dimension:visited {
   color: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .dimension {
+    font-size: 20px;
+  }
+  .header {
+    font-size: 2rem;
+  }
+  .image-div img {
+    width: 99%;
+  }
+  #area {
+    width: 99%;
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 600px) {
+  .dimension {
+    font-size: 40px;
+  }
+  .header {
+    font-size: 3rem;
+  }
+  .image-div img {
+    width: 95%;
+  }
+  #area {
+    width: 95%;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .dimension {
+    font-size: 50px;
+  }
+  .header {
+    font-size: 4rem;
+  }
+  .image-div img {
+    width: 80%;
+  }
+  #area {
+    width: 80%;
+    height: 170px;
+  }
 }
